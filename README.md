@@ -77,56 +77,67 @@ LLM Provider
 
 The backend endpoint is configured in:
 
-src/config/aiConfig.js
+`src/config/aiConfig.js`
 
-## Example configuration:
+## Example Configuration
 
+```js
 export const AI_CONFIG = {
-baseUrl: 'https://evaisys-backend.onrender.com',
-chatPath: '/chat',
-clientId: 'vuetex',
-clientToken: '...'
+  baseUrl: 'https://evaisys-backend.onrender.com',
+  chatPath: '/chat',
+  clientId: 'vuetex',
+  clientToken: '...'
 }
+```
 
 ## Tech Stack
 
-Vue 3
-Quasar Framework
-Vue Router
-Pinia
-Axios / Fetch-based API communication
-SCSS
-Markdown rendering for AI responses
+- Vue 3
+- Quasar Framework
+- Vue Router
+- Pinia
+- Axios / Fetch-based API communication
+- SCSS
+- Markdown rendering for AI responses
 
 ## Project Structure
 
+```text
 src/
 ├── components/
-│ ├── Chat/
-│ │ └── ChatWidget.vue
-│ ├── Items/
-│ └── Navigations/
+│   ├── Chat/
+│   │   └── ChatWidget.vue
+│   ├── Items/
+│   └── Navigations/
 ├── config/
-│ └── aiConfig.js
+│   └── aiConfig.js
 ├── css/
 ├── layouts/
-│ └── MainLayout.vue
+│   └── MainLayout.vue
 ├── pages/
 ├── router/
 └── stores/
-Local Development
+```
 
-## Install dependencies:
+## Local Development
 
+### Install dependencies
+
+```bash
 npm install
+```
 
-## Run the development server:
+### Run the development server
 
+```bash
 npm run dev
+```
 
-## Build for production:
+### Build for production
 
+```bash
 npm run build
+```
 
 ## Notes
 
